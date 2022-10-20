@@ -1,6 +1,4 @@
-//Prendiamo l'elementi del DOM che ci servono
-
-//Creiamo l'array con gli oggetti
+//Milestone0--Creiamo l'array con gli oggetti
 const teamMembersArray = [
     {
         name: "Wayne Barnett",
@@ -40,9 +38,18 @@ const teamMembersArray = [
     }
 ];
 console.log(teamMembersArray);
-//con il ciclo for stampiamo gli oggetti dell'array
+//Milestone1--Con il ciclo for stampiamo gli oggetti dell'array
 for(let i = 0; i < teamMembersArray.length; i++){
     const element = teamMembersArray[i];
     console.log(element.name, element.role, element.photo);
 }
-//Cre
+//Milestone2--Prendiamo l'elemento del DOM che ci serve e col ciclo for ci stampiamo le info dei membri
+const listMembers = document.querySelector(".list-team");
+for(let i = 0; i < teamMembersArray.length; i++){
+    const element = teamMembersArray[i];
+    listMembers.innerHTML += `<tr>
+                                <td>${element.name}</td>
+                                <td>${element.role}</td>
+                                <td>${element.photo}</td>
+                            </tr>`;
+}

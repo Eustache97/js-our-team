@@ -12,6 +12,9 @@ img{
     margin: 0 auto;
     text-align: center;
 }
+td{
+    padding-right: 5rem;
+}
 .my_row{
    width: 100%;
    display: flex;
