@@ -41,4 +41,8 @@ const teamMembersArray = [
 ];
 console.log(teamMembersArray);
 //con il ciclo for stampiamo gli oggetti dell'array
+for(let i = 0; i < teamMembersArray.length; i++){
+    const element = teamMembersArray[i];
+    console.log(element.name, element.role, element.photo);
+}
 //Cre
