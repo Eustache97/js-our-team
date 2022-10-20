@@ -25,4 +25,5 @@ td{
 .my_col{
     width: calc(100% / 3 - var(--gatter));
     text-align: center;
+    background-color: white;
 }
