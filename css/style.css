@@ -1,0 +1,25 @@
+
+:root{
+    --gatter: 1rem;
+}
+img{
+    max-width: 100%;
+    margin-bottom: 1em;
+}
+
+.heading{
+    width: 40%;
+    margin: 0 auto;
+    text-align: center;
+}
+.my_row{
+   width: 100%;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   gap: var(--gatter)
+}
+.my_col{
+    width: calc(100% / 3 - var(--gatter));
+    text-align: center;
+}
